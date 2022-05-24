@@ -13,14 +13,14 @@ if (isset($_POST['submit'])){
 		echo "
 	<script type='text/javascript'>
 	 	alert('Data sukses diubah!');
-	 	document.location.href = 'CRUD.php';
+	 	document.location.href = 'view.php';
 	</script>
 	";
 	}else{
 		echo "
 		<script>
 		 	alert('Data gagal diubah!');
-		 	document.location.href = 'CRUD.php';
+		 	document.location.href = 'view.php';
 	 	</script>
 	 	";
 	}
