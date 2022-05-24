@@ -3,7 +3,7 @@
 require 'functions.php';
 session_start();
 if(isset($_SESSION['login'])){
-	header('Location: CRUD.php');
+	header('Location: view.php');
 	exit;
 }
 
@@ -16,7 +16,7 @@ if (isset($_POST["login"])){
 		$rows = mysqli_fetch_assoc($result);
 		if(password_verify($password, $rows['Password'])){
 			$_SESSION['login'] = true;
-			header('Location: CRUD.php');
+			header('Location: view.php');
 			exit;
 		}
 	}
