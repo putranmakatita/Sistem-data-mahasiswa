@@ -12,14 +12,14 @@ if (hapus($id) > 0){
 	echo "
 	<script type='text/javascript'>
 	 	alert('Data sukses dihapus!');
-	 	document.location.href = 'CRUD.php';
+	 	document.location.href = 'view.php';
 	</script>
 	";
 }else{
 	echo "
 	<script>
 	 	alert('Data gagal dihapus!');
-	 	document.location.href = 'CRUD.php';
+	 	document.location.href = 'view.php';
  	</script>
  	";
 }
