@@ -11,14 +11,14 @@ if (isset($_POST['submit'])){
 			echo "
 			<script>
 				alert('Sukses!');
-				document.location.href = 'CRUD.php';
+				document.location.href = 'view.php';
 			</script>
 			";
 	}else{
 		echo "
 		<script>
 			alert('gagal!');
-			document.location.href = 'CRUD.php';
+			document.location.href = 'view.php';
 		</script>
 		";
 	}
